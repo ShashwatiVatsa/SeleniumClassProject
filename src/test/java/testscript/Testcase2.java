@@ -2,8 +2,8 @@ package testscript;
 
 import java.io.IOException;
 
-import org.openqa.selenium.Point;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import genericLib.BaseClass;
@@ -14,7 +14,7 @@ import pomPages.TestingPage;
 public class Testcase2 extends BaseClass {
 
 	@Test
-	public void tc1() throws IOException
+	public void tc1() throws IOException, InterruptedException
 	{
 		SkillraryLoginPage s=new SkillraryLoginPage(driver);
 		s.gearsButton();
@@ -27,12 +27,10 @@ public class Testcase2 extends BaseClass {
 		TestingPage t=new TestingPage(driver);
 		driverutilies.dragdrop(driver, t.getJunit(), t.getMycart());
 		
-		Point fbloc = t.getFbiconloc().getLocation();
-		int fbx=fbloc.getX();
-		int fby=fbloc.getY();
-		driverutilies.scrollBar(driver, fbx, fby);
 		t.fbicon();
+		Thread.sleep(5000);
 		
-		//Assert.assertEquals(driver.getTitle(), pdata.getPropertyFiledata("fbtitle"));
+		Assert.assertEquals(driver.getTitle(), pdata.getPropertyFiledata("fbtitle"));
+		Reporter.log(driver.getTitle(),true);
 	}
 }

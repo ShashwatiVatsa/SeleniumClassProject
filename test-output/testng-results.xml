@@ -2,34 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-15T09:56:17 IST" name="Default suite" finished-at="2022-02-15T09:59:48 IST" duration-ms="210681">
+  <suite started-at="2022-02-20T16:25:24 IST" name="Default suite" finished-at="2022-02-20T16:26:01 IST" duration-ms="36676">
     <groups>
     </groups>
-    <test started-at="2022-02-15T09:56:17 IST" name="Default test" finished-at="2022-02-15T09:59:48 IST" duration-ms="210681">
-      <class name="testscript.Testcase1">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:testscript.Testcase1@3514a4c0]" started-at="2022-02-15T09:56:17 IST" name="openApp" finished-at="2022-02-15T09:56:51 IST" duration-ms="33632" status="PASS">
+    <test started-at="2022-02-20T16:25:24 IST" name="Default test" finished-at="2022-02-20T16:26:01 IST" duration-ms="36676">
+      <class name="testscript.Testcase3">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:testscript.Testcase3@932bc4a]" started-at="2022-02-20T16:25:24 IST" name="openApp" finished-at="2022-02-20T16:25:42 IST" duration-ms="17497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="tc1()[pri:0, instance:testscript.Testcase1@3514a4c0]" started-at="2022-02-15T09:56:51 IST" name="tc1" finished-at="2022-02-15T09:59:43 IST" duration-ms="172562" status="FAIL">
-          <exception class="org.openqa.selenium.NoAlertPresentException">
+        <test-method signature="tc1()[pri:0, instance:testscript.Testcase3@932bc4a]" started-at="2022-02-20T16:25:42 IST" name="tc1" finished-at="2022-02-20T16:26:01 IST" duration-ms="19091" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such alert
-  (Session info: chrome=98.0.4758.82)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='close_cookies']"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'USER-PC', ip: '192.168.224.86', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'USER-PC', ip: '192.168.95.86', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60950}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 307f7912bf0a17ff0cf46e1121bb7d82]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63912}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bcf08fa323cc8d49c60785f26ab3a56
+*** Element info: {Using=xpath, value=//a[@class='close_cookies']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=98.0.4758.82)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='close_cookies']"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'USER-PC', ip: '192.168.224.86', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
+System info: host: 'USER-PC', ip: '192.168.95.86', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60950}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 307f7912bf0a17ff0cf46e1121bb7d82
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63912}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9bcf08fa323cc8d49c60785f26ab3a56
+*** Element info: {Using=xpath, value=//a[@class='close_cookies']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -41,10 +45,15 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)
-at genericLib.WebDriverDriverUtilies.alertPopup(WebDriverDriverUtilies.java:47)
-at testscript.Testcase1.tc1(Testcase1.java:27)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+at pomPages.CourseVideos.closecookies(CourseVideos.java:27)
+at testscript.Testcase3.tc1(Testcase3.java:26)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -75,22 +84,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc1 -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:testscript.Testcase1@3514a4c0]" started-at="2022-02-15T09:59:44 IST" name="closeApp" finished-at="2022-02-15T09:59:48 IST" duration-ms="4356" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=tc1 status=FAILURE method=Testcase1.tc1()[pri:0, instance:testscript.Testcase1@3514a4c0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- testscript.Testcase1 -->
+      </class> <!-- testscript.Testcase3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -7,10 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class TestingPage {
 
-	@FindBy(xpath = "//*[@id=\"munit testing \"]")
+	@FindBy(xpath = "//img[@id='munit testing ']")
 	private WebElement junit;
 	
-	@FindBy(id = "cartArea")
+	@FindBy(xpath="//div[@id='cartArea']")
 	private WebElement mycart;
 	
 	@FindBy(xpath = "(//i[@class='fa fa-facebook'])[1]")
@@ -31,8 +31,4 @@ public class TestingPage {
 	public void fbicon() {
 		fbiconloc.click();
 	}
-
-	public WebElement getFbiconloc() {
-		return fbiconloc;
-	}	
 }
