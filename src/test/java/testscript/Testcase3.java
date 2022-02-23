@@ -30,12 +30,12 @@ public class Testcase3 extends BaseClass {
 		driverutilies.switchbackframe(driver);
 
 		
-//		  Point twitloc = cv.getShareviatwit().getLocation();
-//		  int twitx=twitloc.getX();
-//		  int twity=twitloc.getY();
-//		  System.out.println(twitx);
-//		  System.out.println(twity);
-//		  driverutilies.scrollBar(driver, twitx-200, twity-200);
+		Point twitloc = cv.getShareviatwit().getLocation();
+		int twitx=twitloc.getX();
+		int twity=twitloc.getY();
+		System.out.println(twitx);
+		System.out.println(twity);
+		driverutilies.scrollBar(driver, twitx-200, twity-200);
 		 
 		/*
 		 * ((JavascriptExecutor)
